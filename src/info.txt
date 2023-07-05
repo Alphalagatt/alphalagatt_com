@@ -1,0 +1,8 @@
+my colors
+background - #0A192E
+
+title text color - #63FFDA
+
+text color - #8893AF
+
+bigger text color - #CCD7F5
