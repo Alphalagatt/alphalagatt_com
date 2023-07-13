@@ -14,10 +14,15 @@ code {
     monospace;
 }
 
+
 .nav{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
   display: flex;
   margin: 30px;
   justify-content: space-between;
+  margin-right: 30px;
 }
 .nav-links-cont{
   display: flex;
@@ -33,13 +38,113 @@ code {
   margin-right: 60px;
 
 }
-.nav-links a{
 
+.nav-links :hover{
+  color: darkgoldenrod;
+}
+
+.nav-links-button{
+  border-style: solid;
+  border-width: .5px;
+  border-radius: 5px;
+  border-color:#63FFDA;
+  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  padding-right: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.nav-links-button-text :hover{
+  color: darkgoldenrod;
+}
+
+.nav-links-text{
+  cursor: pointer;
+}
+.nav-links-text :hover{
+  color: darkgoldenrod;
 }
 .nav-logo{
-  
+  margin: 0px;
+  width: 150px;
+  height: 100px;
 }
 
 .markers{
   color: #63FFDA;
+}
+
+.container{
+  height: calc(100vh - 100px);
+  margin: 20px;
+  position: relative;
+}
+
+.profile-container{
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  margin-left: calc((50% - 300px)/2);
+  margin-top: calc((70vh - 500px)/2);
+}
+
+.profile{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-left: 0px;
+  margin-top: 0px;
+  z-index: 1;
+}
+.profile-overlay{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color:rgba(71, 181, 155, 0.5);
+  margin-left: 0px;
+  margin-top: 0px;
+  z-index: 3;
+}
+.profile-overlay :hover{
+  z-index: 1;
+  cursor: pointer;
+}
+.profile-outline{
+  background-color: #63FFDA;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-width: .5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-color: #63FFDA;
+  z-index: 0;
+}
+.profile img{
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+  cursor: pointer;
+}
+.profile-text{
+  position: absolute;
+  width: 50vw;
+  height: 200px;
+  border-style: solid;
+  border-width: .5px;
+  margin-left: 220px;
+  margin-top: 100px;
+  padding: 20px;
+  border-color: #63FFDA;
+  z-index: 0;
+}
+
+.bubbles{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border-style: solid;
+  position: absolute;
 }
